@@ -7,22 +7,22 @@ public class Calculator {
 	private String a2 = "";
 	private int k=0;
 	private int sum =0;
+	public int i = 0;
 	
 	public Calculator(String string) {
 		this.string = string;
 	}
 	
-	public int searchCommas(String s1, char key) {
-		for(int i = 0; i<s1.length();i++) {
-			if(s1.charAt(i)==key) {
-				return i;
+	public int searchCommas(String s1) {
+		if(s1.charAt(i) != ','){
+			i++;
+			searchCommas(s1);
 			}
-		}
-		return -1;
+		return i;
 	}
 	
 	public void split(String s2) {
-		k = searchCommas(s2, ',');
+		k = searchCommas(s2);
 		for(int i = 0; i<k;i++) {
 			for(int j = k+1; j<s2.length();j++) {
 				a1 = a1 + s2.charAt(i);
