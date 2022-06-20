@@ -5,7 +5,7 @@ public class Calculator {
 	private String string = "";
 	private String a1 = "";
 	private String a2 = "";
-	private int k=0;
+	//private int k=0;
 	private int sum =0;
 	public int i = 0;
 	
@@ -61,13 +61,13 @@ public class Calculator {
 		this.a2 = a2;
 	}
 
-	public int getK() {
-		return k;
-	}
+	//public int getK() {
+	//	return k;
+	//}
 
-	public void setK(int k) {
-		this.k = k;
-	}
+	//public void setK(int k) {
+	//	this.k = k;
+	//}
 
 	public int getSum() {
 		return sum;
