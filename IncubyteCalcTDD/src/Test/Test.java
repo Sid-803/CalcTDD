@@ -38,7 +38,7 @@ public class Test {
 	}
 	
 	public static void main(String[] args) {
-			string = "1,2";
+			string = "1";
 			split(string);
 			System.out.println(add(a1,a2));	
 	}
