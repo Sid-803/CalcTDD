@@ -9,6 +9,16 @@ public class Test {
 		int result=0;
 		return result;
 	}
+	
+	public int searchCommas(String a3, char key) {
+		for(int i = 0; i<a3.length();i++) {
+			if(a3.charAt(i)==key) {
+				return i;
+			}
+		}
+		return -1;
+	}
+	
 	public static void main(String[] args) {
 		string = "";
 		System.out.println(Add(string));	}
