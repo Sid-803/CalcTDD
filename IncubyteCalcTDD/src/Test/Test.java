@@ -22,24 +22,27 @@ public class Test {
 		k = searchCommas(s2, ',');
 		for(int i = 0; i<k;i++) {
 			for(int j = k+1; j<s2.length();j++) {
-				char a = s2.charAt(i);
-				char b = s2.charAt(j);
-				a1 = a1 +a;
-				a2 = a2 +b;
+				a1 = a1 + s2.charAt(i);
+				a2 = a2 + s2.charAt(j);
 			}	
 		}	
 	}
 	
 	public static int add(String a1, String a2) {
-		int k1 = Integer.valueOf(a1);
-		int k2 = Integer.valueOf(a2);
-		sum = k1 + k2;
+		sum = Integer.valueOf(a1) + Integer.valueOf(a2);
 		return sum;
 	}
 	
 	public static void main(String[] args) {
-			string = "1";
+		try {	
+			string = "1,3";
 			split(string);
-			System.out.println(add(a1,a2));	
+			System.out.println(add(a1,a2));
+		}catch(NumberFormatException e) {
+			System.out.println("Error Message: NumberFormat Exception: invalid input string");
+		}finally{
+			if(string == "")
+				System.out.println("Insufficient data");
+		}
 	}
 }
