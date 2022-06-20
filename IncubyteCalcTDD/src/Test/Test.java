@@ -1,47 +1,23 @@
 package Test;
+
+import Calculator.Calculator;
+
 //Basic Architecture of Calculator POJO class.
 //1. Attribute 1 for POJO class is-string of String Datatype.
 //2. It will contain a method which accepts String as parameter. MethodName "Add".
 public class Test {
-	static String string = "";
-	static String a1 = "";
-	static String a2 = "";
-	static int k=0;
-	static int sum =0;
-		
-	public static int searchCommas(String s1, char key) {
-		for(int i = 0; i<s1.length();i++) {
-			if(s1.charAt(i)==key) {
-				return i;
-			}
-		}
-		return -1;
-	}
 	
-	public static void split(String s2) {
-		k = searchCommas(s2, ',');
-		for(int i = 0; i<k;i++) {
-			for(int j = k+1; j<s2.length();j++) {
-				a1 = a1 + s2.charAt(i);
-				a2 = a2 + s2.charAt(j);
-			}	
-		}	
-	}
-	
-	public static int add(String a1, String a2) {
-		sum = Integer.valueOf(a1) + Integer.valueOf(a2);
-		return sum;
-	}
 	
 	public static void main(String[] args) {
+		Calculator calculator = new Calculator();
+		calculator.setString("1,3");
 		try {	
-			string = "1,3";
-			split(string);
-			System.out.println(add(a1,a2));
+			calculator.split(calculator.getString());
+			System.out.println(calculator.add(calculator.getA1(),calculator.getA2()));
 		}catch(NumberFormatException e) {
 			System.out.println("Error Message: NumberFormat Exception: invalid input string");
 		}finally{
-			if(string == "")
+			if(calculator.getString()== "")
 				System.out.println("Insufficient data");
 		}
 	}
