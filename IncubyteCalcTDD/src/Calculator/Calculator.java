@@ -22,11 +22,10 @@ public class Calculator {
 	}
 	
 	public void split(String s2) {
-		k = searchCommas(s2);
-		for(int i = 0; i<k;i++) {
-			for(int j = k+1; j<s2.length();j++) {
-				a1 = a1 + s2.charAt(i);
-				a2 = a2 + s2.charAt(j);
+		for(int j = 0; j<i;j++) {
+			for(int k = i+1; k<s2.length();k++) {
+				a1 = a1 + s2.charAt(j);
+				a2 = a2 + s2.charAt(k);
 			}	
 		}	
 	}

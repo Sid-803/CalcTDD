@@ -9,8 +9,9 @@ public class Test {
 	
 	
 	public static void main(String[] args) {
-		Calculator calculator = new Calculator("1,4");
-		try {	
+		Calculator calculator = new Calculator("1,9");
+		calculator.searchCommas(calculator.getString());
+		try {
 			calculator.split(calculator.getString());
 			System.out.println(calculator.add(calculator.getA1(),calculator.getA2()));
 		}catch(NumberFormatException e) {
