@@ -21,16 +21,18 @@ public class Calculator {
 		return i;
 	}
 	
-	public void split(String s2) {
+	public int add(String s1, String a1, String a2) {
+		if(s1.charAt(i) != ','){
+			i++;
+			searchCommas(s1);
+			}
+		
 		for(int j = 0; j<i;j++) {
-			for(int k = i+1; k<s2.length();k++) {
-				a1 = a1 + s2.charAt(j);
-				a2 = a2 + s2.charAt(k);
+			for(int k = i+1; k<s1.length();k++) {
+				a1 = a1 + s1.charAt(j);
+				a2 = a2 + s1.charAt(k);
 			}	
-		}	
-	}
-	
-	public int add(String a1, String a2) {
+		}
 		sum = Integer.valueOf(a1) + Integer.valueOf(a2);
 		return sum;
 	}

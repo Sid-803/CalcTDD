@@ -9,11 +9,9 @@ public class Test {
 	
 	
 	public static void main(String[] args) {
-		Calculator calculator = new Calculator("1,9");
-		calculator.searchCommas(calculator.getString());
+		Calculator calculator = new Calculator("1,8");
 		try {
-			calculator.split(calculator.getString());
-			System.out.println(calculator.add(calculator.getA1(),calculator.getA2()));
+			System.out.println(calculator.add(calculator.getString(),calculator.getA1(),calculator.getA2()));
 		}catch(NumberFormatException e) {
 			System.out.println("Error Message: NumberFormat Exception: invalid input string");
 		}finally{
