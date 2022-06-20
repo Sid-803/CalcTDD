@@ -7,7 +7,11 @@ public class Calculator {
 	private String a2 = "";
 	private int k=0;
 	private int sum =0;
-		
+	
+	public Calculator(String string) {
+		this.string = string;
+	}
+	
 	public int searchCommas(String s1, char key) {
 		for(int i = 0; i<s1.length();i++) {
 			if(s1.charAt(i)==key) {

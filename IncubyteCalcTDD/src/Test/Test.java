@@ -9,8 +9,7 @@ public class Test {
 	
 	
 	public static void main(String[] args) {
-		Calculator calculator = new Calculator();
-		calculator.setString("1,3");
+		Calculator calculator = new Calculator("1,3");
 		try {	
 			calculator.split(calculator.getString());
 			System.out.println(calculator.add(calculator.getA1(),calculator.getA2()));
