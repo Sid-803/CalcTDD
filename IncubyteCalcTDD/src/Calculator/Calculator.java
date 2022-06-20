@@ -40,6 +40,10 @@ public class Calculator {
 		return string;
 	}
 
+	public void setString(String string) {
+		this.string = string;
+	}
+
 	public String getA1() {
 		return a1;
 	}
