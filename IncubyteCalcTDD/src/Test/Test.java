@@ -9,7 +9,7 @@ public class Test {
 	
 	
 	public static void main(String[] args) {
-		Calculator calculator = new Calculator("1,8");
+		Calculator calculator = new Calculator("1,8,10");
 		try {
 			System.out.println(calculator.add(calculator.getString(),calculator.getA1(),calculator.getA2()));
 		}catch(NumberFormatException e) {
