@@ -6,11 +6,11 @@ public class ServiceLogic {
 	
 	public String s = "";
 	Calculator calculator = new Calculator(s);
-	public int i = calculator.getI();
-	public String a1 = calculator.getA1();
-	public String a2 = calculator.getA2();
-	public int k1 = calculator.getK1();
-	public int k2 = calculator.getK2();
+	public int i = calculator.getCommaIndex();
+	public String a1 = calculator.getSubString1();
+	public String a2 = calculator.getSubString2();
+	public int k1 = calculator.getInteger1();
+	public int k2 = calculator.getInteger2();
 	
 	
 	public ServiceLogic(String s) {

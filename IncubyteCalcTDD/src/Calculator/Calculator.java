@@ -2,53 +2,67 @@ package Calculator;
 
 public class Calculator {
 	private String string = "";
-	private String a1 = "";
-	private String a2 = "";
-	private int i = 0;
-	private int k1=0;
-	private int k2=0;
+	private String subString1 = "";
+	private String subString2 = "";
+	private int commaIndex = 0;
+	private int integer1=0;
+	private int integer2=0;
 	
 	public Calculator(String string){
 		this.string = string;
 	}
 	
-	public void setI(int i) {
-		this.i = i;
-	}
-
+	//Input String
 	public String getString() {
 		return string;
 	}
-
+	
 	public void setString(String string) {
 		this.string = string;
 	}
 
-	public int getK1() {
-		return k1;
+	//Comma saperated string after splitting from parent string
+	public String getSubString1() {
+		return subString1;
 	}
 
-	public int getK2() {
-		return k2;
+	public void setSubString1(String subString1) {
+		this.subString1 = subString1;
 	}
 	
-	public int getI() {
-		return i;
+	//Comma saperated string after splitting from parent string
+	public String getSubString2() {
+		return subString2;
 	}
 
-	public String getA1() {
-		return a1;
+	public void setSubString2(String subString2) {
+		this.subString2 = subString2;
+	}
+	
+	//Returns index of comma, this index is used to split the string into two sub string.
+	public int getCommaIndex() {
+		return commaIndex;
 	}
 
-	public void setA1(String a1) {
-		this.a1 = a1;
+	public void setCommaIndex(int commaIndex) {
+		this.commaIndex = commaIndex;
 	}
 
-	public String getA2() {
-		return a2;
+	//Returns Integer for substring
+	public int getInteger1() {
+		return integer1;
 	}
 
-	public void setA2(String a2) {
-		this.a2 = a2;
+	public void setInteger1(int integer1) {
+		this.integer1 = integer1;
+	}
+
+	//Returns Integer for substring
+	public int getInteger2() {
+		return integer2;
+	}
+
+	public void setInteger2(int integer2) {
+		this.integer2 = integer2;
 	}
 }

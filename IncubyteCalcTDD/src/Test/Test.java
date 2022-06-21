@@ -8,12 +8,13 @@ public class Test {
 	
 	public static void main(String[] args) {
 		//Input String
-		String s = "1,2";
+		String s = "//;\n21,3";
+		
 		//Object of ServiceLogic POJO class
 		ServiceLogic service = null;
 		
 		int sum=0;
-
+		
 		//Try-catch to handle if non integer value or negative number exist
 		try {
 			service = new ServiceLogic(s);
@@ -39,7 +40,7 @@ public class Test {
 			if(service.k1 <0  & service.k2<0) 
 				System.out.println("i.e " + service.k1 + "," + service.k2);
 			
-			//Doesnt calculate sum if anyone number in string is negative
+			//Doesnot calculate sum if anyone number in string is negative
 			if (service.k1 <0 || service.k2 <0)  
 				System.out.println("The sum is unavailable.");
 			
