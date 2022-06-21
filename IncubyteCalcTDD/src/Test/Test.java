@@ -7,7 +7,7 @@ public class Test {
 	
 	
 	public static void main(String[] args) {
-		String s = "//;\n11,2";
+		String s = "-1,-2";
 		Calculator calculator = null;
 		int sum=0;
 		
