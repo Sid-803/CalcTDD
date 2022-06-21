@@ -7,32 +7,36 @@ public class Calculator {
 	private String a2 = "";
 	private int sum =0;
 	public int i = 0;
+	public String temp="";
+	public boolean flag = false;
 	
 	public Calculator(String string) {
 		this.string = string;
 	}
 	
-	public int searchCommas(String s1) {
-		if(s1.charAt(i) != ','){
-			i++;
-			searchCommas(s1);
-			}
-		return i;
+	
+	public void searchCommas(String s1) {
+		for(int k =0; k<s1.length();k++) {
+			if(s1.charAt(k)==',')
+				i=k;
+		}
+		
 	}
 	
-	public int add(String s1, String a1, String a2) {
-		if(s1.charAt(i) != ','){
-			i++;
-			searchCommas(s1);
-			}
+	public int add(String s2, String a1, String a2) {
+		if(s2!="") {
+			searchCommas(s2);
+		}
 		
 		for(int j = 0; j<i;j++) {
-			for(int k = i+1; k<s1.length();k++) {
-				a1 = a1 + s1.charAt(j);
-				a2 = a2 + s1.charAt(k);
+			for(int k = i+1; k<s2.length();k++) {
+				a1 = a1 + s2.charAt(j);
+				a2 = a2 + s2.charAt(k);
 			}	
 		}
-		sum = Integer.valueOf(a1) + Integer.valueOf(a2);
+		
+			sum = Integer.valueOf(a1) + Integer.valueOf(a2);
+		
 		return sum;
 	}
 
