@@ -4,7 +4,7 @@ public class Calculator {
 	private String string = "";
 	private String a1 = "";
 	private String a2 = "";
-	public int i = 0;
+	private int i = 0;
 	private int k1=0;
 	private int k2=0;
 	
@@ -28,7 +28,6 @@ public class Calculator {
 		}else {
 			return s;
 		}
-	
 	}
 		
 	public void searchCommas(String s1) {
