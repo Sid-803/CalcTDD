@@ -9,7 +9,7 @@ public class Test {
 	
 	
 	public static void main(String[] args) {
-		String s = "";
+		String s = "1";
 		Calculator calculator = null; 
 		//calculator.setString(calculator.delimeter(s));
 		//System.out.println(calculator.getString());

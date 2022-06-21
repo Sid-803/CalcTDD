@@ -24,10 +24,7 @@ public class Calculator {
 	}
 	
 	public int add(String s2, String a1, String a2) {
-		if(s2!="") {
-			searchCommas(s2);
-		}
-		
+		searchCommas(s2);
 		for(int j = 0; j<i;j++) {
 			for(int k = i+1; k<s2.length();k++) {
 				a1 = a1 + s2.charAt(j);
